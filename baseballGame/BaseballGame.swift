@@ -58,6 +58,7 @@ struct BaseballGame {
             var answerSet:Set<String> = []
             var answerArray = Array(answer)
             
+            // 정답 만들기
             // 정답도 중복이 있으면 안되므로, set으로 랜덤 숫자 뽑기
             while answerSet.count < 3 {
                 answerSet.update(with: String(Int.random(in: 0...9)))
